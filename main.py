@@ -24,7 +24,16 @@ def square(size, steps):
         t.forward(size)
 
 
-square(100, 4)
+def squares(beginning_size, nb):
+    for i in range(0, nb):
+        size = (i + 1) * beginning_size
+        square(size, 4)
+
+
+
+# square(200, 4)
+squares(10, 10)
+
 # stairs(60, 5)
 
 turtle.done()
